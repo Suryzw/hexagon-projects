@@ -1,0 +1,15 @@
+.navStyle{
+    background-color: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 49%, rgba(178,255,255,1) 82%, rgba(158,254,255,1) 100%);
+    font-size: large;
+}
+
+.nav-pills .nav-item .nav-link.active,
+.nav-pills .nav-item #basic-nav-dropdown.dropdown-toggle.show{
+    background-color:rgba(0, 140, 255, 0.712);
+    color: white;
+}
+.centeredItem{
+    display: flex;
+    justify-content: end;
+}
