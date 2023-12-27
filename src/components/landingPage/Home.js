@@ -1,11 +1,13 @@
-import { Container,Form,Row,Col,Button } from "react-bootstrap";
+import { Container,Form,Row,Col } from "react-bootstrap";
 import logo from '../../assets/hexagonlogo.png'
 import './Body.css'
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 function Home(){
     return(
         <body>
+            <Header/>
             <Container fluid style={{marginTop:'7vh'}}>
             <Row className="text-center">
                 <Col auto>
@@ -40,7 +42,7 @@ function Home(){
                                 name="checkBox1"
                                 type="checkbox"
                             /> 
-                            <Button variant="primary" type="submit"> Gabung Sekarang</Button>
+                            <Link to='/auth/signup' className="btn btn-primary"> Gabung Sekarang</Link>
                             <p className="pt-3">Sudah punya akun? klik di <Link to={'/auth/login'}>sini</Link></p>
                         </Form>                    
                     </Container>  

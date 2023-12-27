@@ -2,9 +2,12 @@ import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from '../../assets/hexagonlogo.png'
 import './style.css'
+import Header from "../landingPage/Header";
 
 function Login(){
     return(
+        <>
+        <Header/>
         <Container style={{marginTop:'7vh'}}>
             <Row>
                 <Col className="centered">
@@ -26,13 +29,14 @@ function Login(){
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
                     <Col className="centered">
-                        <Button style={{width:'100%'}}variant="primary" type="submit"> Masuk</Button>
+                        <Link to='/home' className="btn btn-primary" style={{width:'100%'}}>Masuk</Link>
                     </Col>
                     <p className="pt-3">Belum memiliki akun? daftar <Link to='/auth/signup'>di sini</Link></p> 
                     </Form> 
                 </Col>
             </Row>       
         </Container>
+        </>
     )
 }
 export default Login;

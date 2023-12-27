@@ -14,12 +14,12 @@ function Header() {
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav variant="pills" className="me-auto" defaultActiveKey="#home">
+            <Nav variant="pills" className="me-auto" defaultActiveKey="/">
               <Nav.Item className='mx-2'>
                 <NavLink className='nav-link'to={"/"}>Home</NavLink>
               </Nav.Item>
               <Nav.Item className='mx-2'>
-                <NavLink className={'nav-link'} to={"/about"}>About Us</NavLink>
+                <NavLink className={'nav-link'} to={"/aboutUs"}>About Us</NavLink>
               </Nav.Item>
               <Nav.Item className='mx-2'>
                 <NavDropdown title="Contact" id="basic-nav-dropdown">
